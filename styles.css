@@ -83,27 +83,124 @@ nav ul li a:hover {
 .network a :hover{
     color: orange;
 }
+
+* {
+    padding: 0;
+    border: 0;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+nav {
+    width: 84%;
+    margin-left: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo {
+    width: 15%;
+    cursor: pointer;
+    background-color: red;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+nav ul li a:hover {
+    color: orange
+}
+.info {
+    margin-left: 8%;
+    margin-top: 8%;
+}
+.info h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.info span {
+    color: orange;
+}
+.info p {
+    margin-bottom: 50px;
+}
+.info a {
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: orange;
+    padding:10px 20px;
+    color: black;
+    display: inline-block;
+    border-radius: 5px;
+}
+.import-img{
+    width: 35%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.import-img img{
+    height: 100%;
+    position: absolute;
+}
+.network {
+    margin-left: 8%;
+    margin-top: 100px;
+    size: 60%;
+}
+
+.network a{
+    margin-left: 8px;
+    font-size: 25px;
+    color: black;
+    margin-right: 20px;
+}
+.network a :hover{
+    color: orange;
+}
 @media screen and (max-width: 768px) {
     .hero {
-        height: auto; 
+        height: 100%; 
+        width: 100%;
     }
 
     nav {
+        margin-left: 10px;
         width: 100%;
         display: inline;
+        
     }
     .logo {
+        margin-top: 10px;
         width: 25%; 
         margin-bottom: 10px;
     }
 
-    nav ul {
+    .nav ul {
         display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
+        
     }
+    nav ul li {
+        padding: 20px 2px;
+        justify-content: center;
+    }
+
     nav ul li a {
-        font-size: medium;
+        color: black;
+        font-size: 15px;
+        padding: 5px 6px;
+        
     }
 
 
@@ -111,25 +208,35 @@ nav ul li a:hover {
         margin-left: 10px; 
         margin-top: 20px; 
     }
+    .info h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .info p {
+        font-size: 20px;
+    }
 
     .import-img {
-        width: 100%;
+        visibility: hidden;
+        width: 0;
         height: auto;
-        position: relative; 
-        bottom: auto;
-        right: auto;
-        margin-top: 20px; 
+
     }
 
     .network { 
-        margin-top: 90%; 
-        justify-content: center;
+        margin-top: 40%; 
         text-align: center;
     }
     
     .network a {
-        margin-left: 0;
         margin-right: 10px;
-        padding: 10px;
+        padding: 5px;
+        color: rgb(0, 0, 0);
     }
+    .body,html {
+        padding: 0;
+        border: 0;
+
+    }
+
 }
